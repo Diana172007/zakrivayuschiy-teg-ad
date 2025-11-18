@@ -1,16 +1,411 @@
-/* Здесь вы напишете основную часть стилей страницы.
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
 
-*/
+.background{
+  width: 1440px;
+  height: 960px;
+  margin-left: 210px;
+  display: block;
+}
 
+body {
+  position: relative;
+  min-height: 15000px;
+}
+
+.main-container {
+  position: relative;
+  height: 9000px;
+}
+.header {
+    position: relative;
+    width: 100%;
+}
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+}
+
+.square-block {
+    position: absolute;
+    top: 100px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 364px;
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_title {
+    line-height:108px;
+    margin: 63px 0 0 0;
+    font-size: 65px
+    
+}
+.hider_all{
+  margin-top: 35px;
+
+}
+.header-text {
+    line-height: 108px;
+    font-size: 23x;
+    margin: -45px 0 0 0;
+}
+body {
+  font-family: 'PressStart2P', 'Courier New', monospace !important;
+  background-color: #f0f0f0;
+}
+.header_title {
+  font-family: 'PressStart2P', 'Courier New', monospace !important;
+  font-size: 65px;
+}
+.header-text {
+  font-family: 'PressStart2P', 'Courier New', monospace !important;
+  font-size: 23px;
+}
+.square-block-2 {
+    position: absolute;
+    top: 568px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 959px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.article-title-1{
+  font-family: "Inter";
+  line-height: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.text-1 {
+  font-family: "Inter";
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+  
+  margin-top: 27px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.text-2{
+  font-family: "Inter";
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top:27px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.container {
+  position: relative;
+}
+
+.image-1 {
+  height: 696px;
+  width: 696px;
+  display: block;
+  transform: translatex(-2px);
+}
+
+.teg-html {
+  position: absolute;
+  top: 25px;
+  left: 570px;
+}
+.card__icon-button{
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-left: 495px;
+  outline: none;
+}
+.card__like-button {
+  background: none;
+  transform: translateY(-25px);
+  margin-left: 540px;
+  outline: none;
+  padding: 6px 37px 6px 25px;
+  inline-size: 130px;
+  block-size: 38px;
+  margin-top: -22px;
+}
+
+.button__text{
+    font-family: 'PressStart2P', 'Courier New', monospace !important;
+    font-weight: 400;
+    font-size: 14px;
+    margin-left:10px;
+}
+.square-block-3 {
+    position: absolute;
+    top: 1577px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 1001px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.square-block-4 {
+    position: absolute;
+    top: 2627px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 959px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.text-3{
+  font-family: "Inter";
+  line-height: 21px;
+  font-weight: 400;
+  font-size: 17.8px;
+  margin-left: 10px;
+  margin-top:27px;
+  margin-right: 25px;
+  margin-left: 25px;
+}
+.square-block-5 {
+    position: absolute;
+    top: 3636px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 997px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.square-block-6{
+    position: absolute;
+    top: 4690px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 1018px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.square-block-7{
+    position: absolute;
+    top: 5763px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 959px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.square-block-8{
+    position: absolute;
+    top: 6767px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 999px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+.square-block-9{
+    position: absolute;
+    top:7820px;
+    left: 580px;
+    border: 2.5px solid #000;
+    width: 696px;
+    height: 1039px;
+    background: #ffffff;
+    color: #000000;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-save {
+  text-align: center;
+  margin-top:7960px;
+}
+
+.button-save-2 {
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 15px 30px;
+  font-family: 'PressStart2P', 'Courier New', monospace !important;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.button-save-2:hover {
+  background: #ffffff;
+}
+
+@media (max-width: 374px) {
+  .main-container {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .background {
+    width: 100%;
+    height: 200px;
+    margin-left: 0;
+  }
+
+  .header {
+    padding: 10px 0;
+  }
+
+  .square-block,
+  .square-block-2,
+  .square-block-3,
+  .square-block-4,
+  .square-block-5,
+  .square-block-6,
+  .square-block-7,
+  .square-block-8,
+  .square-block-9 {
+    position: static;
+    width: 92%;
+    margin: 15px auto;
+    height: auto;
+    min-height: 200px;
+    padding: 15px;
+    border-width: 2px;
+  }
+
+  .header_title {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 15px 0 0 0;
+  }
+
+  .header-text {
+    font-size: 12px;
+    line-height: 25px;
+    margin: -15px 0 0 0;
+  }
+
+  .article-title-1 {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 8px 10px;
+    text-align: center;
+  }
+
+  .text-1,
+  .text-2,
+  .text-3 {
+    font-size: 12px;
+    line-height: 18px;
+    margin: 15px 10px;
+    text-align: justify;
+  }
+
+  .container {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .image-1,
+  .image-2 {
+    width: 100%;
+    height: auto;
+    transform: none;
+  }
+
+  .teg-html {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: auto;
+  }
+
+  .card__icon-button {
+    margin: 15px auto;
+    display: block;
+    transform: scale(0.8);
+  }
+
+  .card__like-button {
+    margin: -10px auto 15px;
+    display: block;
+    transform: none;
+    padding: 8px 16px;
+    inline-size: 100px;
+    block-size: 30px;
+  }
+
+  .button__text {
+    font-size: 10px;
+  }
+
+  footer {
+    position: relative;
+    z-index: 1000;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .button-save-2 {
+    padding: 12px 20px;
+    font-size: 12px;
+    width: 90%;
+    max-width: 280px;
+  }
+
+  .like-container {
+    margin: 10px 0;
+  }
+
+  .image-1-content,
+  .image-2-content {
+    padding: 10px;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .main-container {
+    padding-bottom: 100px;
+  }
 }
