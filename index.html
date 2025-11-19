@@ -412,25 +412,32 @@
           </div>
         </article>
       </main>
-      <footer>
+            <footer>
         <div class="button-save">
           <button class="button-save-2 save-memory-button" type="button">Сохранить на память</button>
         </div>
       </footer>
-    <dialog class="memory-dialog" id="memoryDialog">
-      <div class="dialog-content">
-        <div class="diskette-icon"></div>
-        <p class="dialog-message">ВСТАВЬТЕ,ДИСКЕТУ ЧТОБЫ ПРОДОЛЖИТЬ</p>
-      </div>
-      <form method="dialog">
-        <div class="dialog-actions">
-          <button type="submit" class="dialog-ok-button">
-            ОК
-          </button>
+      
+      <dialog id="floppy_dialog" class="floppy_dialog">
+        <div class="dialog_description">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 44 44"
+            class="dialog_floppy_svg"
+          >
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <p class="dialog_label">Вставьте дискету, чтобы продолжить</p>
         </div>
-      </form>
-    </dialog>
-  </div>
-</dialog>
+        <form method="dialog">
+          <button 
+            type="submit"
+            class="dialog_button decorated_button"
+          >
+            <span class="decorated_button_text">OK</span>
+          </button>
+        </form>
+      </dialog>
+    </div>
   </body>
 </html>
