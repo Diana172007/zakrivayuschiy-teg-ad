@@ -412,18 +412,24 @@
           </div>
         </article>
       </main>
-      <footer class="footer">
-        <a href="#save-memory" class="button save-button"> 
-          <svg class="floppy">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <span class="button__text">
-            Сохранить на память
-          </span>
-        </a>
+      <footer>
+        <div class="button-save">
+          <button class="button-save-2 save-memory-button" type="button">Сохранить на память</button>
+        </div>
       </footer>
-      <div id="save-memory" class="memory-message">
-        <h2>Вставьте дискету, чтобы продолжить</h2>
-      </div>
-    </body>
+    </div>
+    <script src="./script.js"></script>
+    <dialog class="modal">
+  <div class="modal__content">
+    <div class="modal__column modal__column--left">
+      <img class="modal__diskette" src="images/background.svg" alt="Дискета">
+    </div>
+    <div class="modal__column modal__column--right">
+      <p class="modal__text">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</p>
+      <button class="modal__button button-save-2" type="button">ОК</button>
+      <p class="modal__date">2013/9</p>
+    </div>
+  </div>
+</dialog>
+  </body>
 </html>
