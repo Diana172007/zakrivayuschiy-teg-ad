@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
   </head>
-  <body class="page" onsubmit="return false;">
+  <body class="page">
     <div class="main-container">
       <header class="header">
         <img class="background" src="images/background.svg" alt="черные точки">
@@ -412,25 +412,18 @@
           </div>
         </article>
       </main>
-      <footer>
-        <div class="button-save">
-          <button class="button-save-2" type="button" 
-                  onclick="this.nextElementSibling.showModal(); event.preventDefault(); return false;">
+      <footer class="footer">
+        <a href="#save-memory" class="button save-button"> 
+          <svg class="floppy">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">
             Сохранить на память
-          </button>
-        </div>
-        
-        <dialog class="dialog">
-          <div class="dialog__content">
-            <h3 class="dialog__title">Сохранить на память</h3>
-            <button class="dialog__button" type="button" 
-                    onclick="this.closest('dialog').close(); event.preventDefault(); return false;">
-              OK
-            </button>
-          </div>
-        </dialog>
+          </span>
+        </a>
       </footer>
-    </div>
-    <script src="./script.js"></script>
-  </body>
+      <div id="save-memory" class="memory-message">
+        <h2>Вставьте дискету, чтобы продолжить</h2>
+      </div>
+    </body>
 </html>
