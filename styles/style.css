@@ -278,7 +278,11 @@ body {
 .dialog__content {
     text-align: center;
 }
-
+.dialog__title {
+    font-family: 'PressStart2P', 'Courier New', monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
 .dialog__button {
     color: #000000;
     border: 2px solid #000000;
@@ -322,6 +326,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+
 
 @media (max-width: 374px) {
   .main-container {
