@@ -418,10 +418,6 @@ body {
   .button-save-2:active {
     transform: scale(0.98);
   }
-  
-  .button-save-2 {
-    types: "button";
-  }
 }
 .card__like-button,
 .card__icon-button,
