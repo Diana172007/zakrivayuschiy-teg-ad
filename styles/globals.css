@@ -51,3 +51,32 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+
+.page {
+  min-inline-size: 320px;
+  min-block-size: 100dvb;
+  font-family: var(--main-font);
+  background-color: var(--background-color);
+  font-variation-settings: 'wght' var(--font-weight-normal);
+  overflow-x: hidden;
+}
+
+.header_title,
+.header-text,
+.button__text,
+.button-save-2 {
+  font-family: var(--accent-font);
+  font-variation-settings: 'wght' var(--font-weight-accent);
+}
+
+.article-title-1 {
+  font-variation-settings: 'wght' var(--font-weight-bold);
+}
+
+@supports ((-webkit-text-stroke: 1px var(--text-stroke-color)) or (text-stroke: 1px var(--text-stroke-color))) {
+  .header_title {
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    text-stroke: 1px var(--text-stroke-color);
+  }
+}
