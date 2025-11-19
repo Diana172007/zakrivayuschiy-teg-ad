@@ -416,12 +416,6 @@ body {
     transform: scale(0.98);
   }
 }
-.card__like-button,
-.card__icon-button,
-.button-save-2 {
-  -webkit-tap-highlight-color: transparent;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+
+
+
