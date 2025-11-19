@@ -425,3 +425,44 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
+.floppy_dialog {
+  border: 2px solid #000000;
+  background: #ffffff;
+  padding: 30px;
+  margin: auto;
+}
+
+.floppy_dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.dialog_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.dialog_floppy_svg {
+  width: 44px;
+  height: 44px;
+}
+
+.dialog_label {
+  font-family: 'PressStart2P', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.dialog_button {
+  border: 2px solid #000000;
+  background: #ffffff;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: 'PressStart2P', 'Courier New', monospace;
+  font-size: 14px;
+}

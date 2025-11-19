@@ -412,9 +412,13 @@
           </div>
         </article>
       </main>
-            <footer>
+       <footer>
         <div class="button-save">
-          <button class="button-save-2 save-memory-button" type="button">Сохранить на память</button>
+          <form method="dialog" target="floppy_dialog">
+            <button class="button-save-2" type="submit">
+              Сохранить на память
+            </button>
+          </form>
         </div>
       </footer>
       
@@ -430,10 +434,7 @@
           <p class="dialog_label">Вставьте дискету, чтобы продолжить</p>
         </div>
         <form method="dialog">
-          <button 
-            type="submit"
-            class="dialog_button decorated_button"
-          >
+          <button type="submit" class="dialog_button decorated_button">
             <span class="decorated_button_text">OK</span>
           </button>
         </form>
