@@ -417,18 +417,19 @@
           <button class="button-save-2 save-memory-button" type="button">Сохранить на память</button>
         </div>
       </footer>
-    </div>
-    <script src="./script.js"></script>
-    <dialog class="modal">
-  <div class="modal__content">
-    <div class="modal__column modal__column--left">
-      <img class="modal__diskette" src="images/background.svg" alt="Дискета">
-    </div>
-    <div class="modal__column modal__column--right">
-      <p class="modal__text">ВСТАВЬТЕ ДИСКЕТУ, ЧТОБЫ ПРОДОЛЖИТЬ</p>
-      <button class="modal__button button-save-2" type="button">ОК</button>
-      <p class="modal__date">2013/9</p>
-    </div>
+    <dialog class="memory-dialog" id="memoryDialog">
+      <div class="dialog-content">
+        <div class="diskette-icon"></div>
+        <p class="dialog-message">ВСТАВЬТЕ,ДИСКЕТУ ЧТОБЫ ПРОДОЛЖИТЬ</p>
+      </div>
+      <form method="dialog">
+        <div class="dialog-actions">
+          <button type="submit" class="dialog-ok-button">
+            ОК
+          </button>
+        </div>
+      </form>
+    </dialog>
   </div>
 </dialog>
   </body>
