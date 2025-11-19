@@ -414,7 +414,9 @@
       </main>
       <footer>
         <div class="button-save">
-          <button class="button-save-2" type="button" id="saveMemoryButton">Сохранить на память</button>
+          <button class="button-save-2" type="button" onclick="event.preventDefault(); document.getElementById('memoryDialog').showModal();">
+            Сохранить на память
+          </button>
         </div>
       </footer>
 
@@ -424,23 +426,11 @@
           <p class="dialog-message">ВСТАВЬТЕ,ДИСКЕТУ ЧТОБЫ ПРОДОЛЖИТЬ</p>
         </div>
         <div class="dialog-actions">
-          <button type="button" class="dialog-ok-button" id="okButton">ОК</button>
+          <button type="button" class="dialog-ok-button" onclick="event.preventDefault(); document.getElementById('memoryDialog').close();">
+            ОК
+          </button>
         </div>
       </dialog>
     </div>
-    <script src="./scripts/like.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        saveMemoryButton.addEventListener('click', (event) => {
-            event.preventDefault(); 
-            memoryDialog.showModal();
-        });
-
-        okButton.addEventListener('click', (event) => {
-            event.preventDefault(); 
-            memoryDialog.close();
-        });
-    });
-</script>
   </body>
 </html>
