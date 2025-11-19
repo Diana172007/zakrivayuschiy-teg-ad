@@ -258,29 +258,46 @@ body {
   block-size: 38px;
   margin-top: -22px;
 }
+/* Добавьте в конец вашего style.css */
 
-.button__text {
-  font-family: 'PressStart2P', 'Courier New', monospace;
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 10px;
+.dialog {
+    border: 2px solid #000000;
+    padding: 20px;
+    background: #ffffff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
 }
 
-.button-save {
-  text-align: center;
-  margin-top: 7960px;
+.dialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.button-save-2 {
-  color: #000000;
-  border: 2px solid #000000;
-  padding: 15px 30px;
-  font-family: 'PressStart2P', 'Courier New', monospace;
-  font-size: 14px;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: 400;
-  background: #ffffff;
+.dialog__content {
+    text-align: center;
+}
+
+.dialog__title {
+    font-family: 'PressStart2P', 'Courier New', monospace;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.dialog__button {
+    color: #000000;
+    border: 2px solid #000000;
+    padding: 10px 20px;
+    font-family: 'PressStart2P', 'Courier New', monospace;
+    font-size: 12px;
+    cursor: pointer;
+    background: #ffffff;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @media (max-width: 374px) {
