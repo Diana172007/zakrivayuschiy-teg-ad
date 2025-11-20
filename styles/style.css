@@ -248,6 +248,36 @@ body {
   outline: none;
 }
 
+@keyframes fill-black {
+  from {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+  }
+  to {
+    color: #000000;
+    background-color: #000000;
+  }
+}
+
+@keyframes fill-white {
+  from {
+    color: #000000;
+    background-color: #000000;
+  }
+  to {
+    color: rgba(0, 0, 0, 0.5);
+    background-color: transparent;
+  }
+}
+
+.button__text {
+  font-family: 'PressStart2P', 'Courier New', monospace;
+  font-weight: 400;
+  font-size: 14px;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .card__like-button {
   background: none;
   transform: translateY(-25px);
@@ -257,14 +287,17 @@ body {
   inline-size: 130px;
   block-size: 38px;
   margin-top: -22px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
+.card__like-button:hover {
+  animation: fill-black 0.5s ease forwards;
+}
 
-.button__text {
-  font-family: 'PressStart2P', 'Courier New', monospace;
-  font-weight: 400;
-  font-size: 14px;
-  margin-left: 10px;
+.card__like-button:not(:hover)  {
+  animation: fill-white 0.5s ease forwards;
 }
 
 .button-save {
@@ -416,6 +449,5 @@ body {
     transform: scale(0.98);
   }
 }
-
 
 
